@@ -1,0 +1,79 @@
+@import "../../index.scss";
+
+.event_route {
+  padding: 50px 0;
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+
+    .flex-between {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-image {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 30px;
+    }
+  }
+}
+
+.event_tasks {
+  padding: 50px 0;
+  background: url(../../assets/abstracts/marble_background.svg) no-repeat center;
+  background-size: cover;
+
+  .event_tasks_wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.75em;
+
+    .task_card {
+      background: #ffffff;
+      border: 1px solid $primary-gold;
+      box-sizing: border-box;
+      box-shadow: 0px 1px 15px rgba(81, 224, 255, 0.05);
+      border-radius: 8px;
+      width: 100%;
+
+      &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 2em;
+        cursor: pointer;
+        padding: 1.25em 1.5em;
+
+        &_left {
+          display: flex;
+          align-items: center;
+
+          > img {
+            width: 50px;
+            height: 50px;
+          }
+
+          > div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+          }
+        }
+
+        &_right {
+          b {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            color: $secondary-gold;
+            font-family: $font-primary-bold;
+          }
+        }
+      }
+    }
+  }
+}

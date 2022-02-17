@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Aeonik-regular";
+  src: url(./assets/fonts/AeonikPro/AeonikPro-Regular.ttf);
+}
+@font-face {
+  font-family: "Aeonik-bold";
+  src: url(./assets/fonts/AeonikPro/AeonikPro-Bold.ttf);
+}
+@font-face {
+  font-family: "PlayfairDisplay-regular";
+  src: url(./assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "PlayfairDisplay-bold";
+  src: url(./assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf);
+}
+
+$primary-gold: #fcbc67;
+$secondary-gold: #ffa225;
+$white: #ffffff;
+$primary-text: #1d2127;
+$secondary-text: #605b73;
+$font-primary-regular: "Aeonik-regular";
+$font-primary-bold: "Aeonik-bold";
+$font-secondary-regular: "PlayfairDisplay-regular";
+$font-secondary-bold: "PlayfairDisplay-bold";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-primary-regular;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.pad {
+  padding: 0 3.125em;
+
+  @media (max-width: 768px) {
+    padding: 0 2em;
+  }
+  @media (max-width: 576px) {
+    padding: 0 1.25em;
+  }
+}
+
+@for $i from 5 to 51 {
+  .p-#{$i} {
+    padding: $i + px;
+  }
+  .pt-#{$i} {
+    padding-top: $i + px;
+  }
+  .pl-#{$i} {
+    padding-left: $i + px;
+  }
+  .pr-#{$i} {
+    padding-right: $i + px;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i + px;
+  }
+  .m-#{$i} {
+    margin: $i + px;
+  }
+  .mt-#{$i} {
+    margin-top: $i + px;
+  }
+  .ml-#{$i} {
+    margin-left: $i + px;
+  }
+  .mr-#{$i} {
+    margin-right: $i + px;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i + px;
+  }
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2.5em;
+  line-height: 56px;
+  letter-spacing: 0.03em;
+  color: $primary-text;
+  font-family: $font-secondary-bold;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2em;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  font-family: $font-secondary-bold;
+  color: $primary-text;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 1.5em;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  font-family: $font-secondary-bold;
+  color: $primary-text;
+}
+
+h5 {
+  font-weight: 800;
+  font-size: 1em;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-family: $font-secondary-bold;
+  color: $primary-text;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  color: $secondary-text;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}

@@ -1,0 +1,41 @@
+@import "../../index.scss";
+
+%baseStyles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 5px;
+  white-space: nowrap;
+  padding: 8px 1em;
+  font-size: 14px;
+  line-height: 22px;
+  color: $primary-text;
+  text-transform: capitalize;
+  font-family: $font-primary-bold;
+  cursor: pointer;
+
+  span {
+    font-size: 14px;
+    line-height: 22px;
+    color: $primary-text;
+    text-transform: capitalize;
+  }
+
+  img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+  }
+}
+
+.primary_btn {
+  @extend %baseStyles;
+  border: 1px solid $primary-gold;
+  background-color: transparent;
+}
+
+.secondary_btn {
+  @extend %baseStyles;
+  border: 1px solid $primary-gold;
+  background-color: $primary-gold;
+}

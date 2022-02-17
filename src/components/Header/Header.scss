@@ -1,0 +1,35 @@
+@import "../../index.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  height: 90px;
+
+  &_controls {
+    display: flex;
+    align-items: center;
+    grid-gap: 1em;
+
+    .address {
+      color: $secondary-text;
+      padding-right: 10px;
+      margin-right: 10px;
+      border-right: 1px solid $secondary-text;
+    }
+  }
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  padding: 3em 0 2em;
+
+  > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
