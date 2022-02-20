@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { Footer, Header } from "./components";
 
 import { Event, LandingPage, PageNotFound } from "./pages";
+import Leaderboard from "./pages/LandingPage/Leaderboard";
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/event/:id" element={<Event />} />
+        <Route path="/leaderboard" element={<Leaderboard/>} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

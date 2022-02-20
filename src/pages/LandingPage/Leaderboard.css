@@ -1,0 +1,106 @@
+.leaderboard{
+  background-image: url(../../assets/abstracts/marble_background.svg);
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70vw;
+  }
+  tr {
+    text-align: left;
+    margin: 20px;
+
+  }
+  .leaderboard_title{
+    color: #1D2127;
+    font-family: Aeonik Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  .table_head{
+    border: 0px solid;
+    padding-bottom: 10px;
+  }
+  .table_head th{
+    color: #605B73;
+    font-family: Aeonik Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  .table_row{
+    border: 1px solid #FCBC67;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+  }
+  td{
+    padding: 20px;
+  }
+  
+  .table_row:hover {
+    background-color: #dddddd;
+  }
+  .table_Name{
+    display: flex;
+  }
+  .name_logo{
+    align-items: center;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: rgb(101, 211, 255);
+    border-radius: 50%;
+  }
+  .fm{
+    background-color: #F99A2C !important;
+  }
+  .bc{
+    background-color: #2CF996 !important;
+  }
+  .sn{
+    background-color: #2CE0F9 !important;
+  }
+  .rr{
+    background-color: #F9752C !important;
+  }
+  .dl{
+    background: #F9752C !important;
+  }
+  .dr{
+    background: #F92CE4 !important;
+  }
+  .la{
+    background: #2C65F9 !important;
+  }
+  .jj{
+    background: #F95D2C !important;
+  }
+  .eh{
+    background: #2CF965 !important;
+  }
+  .winners{
+    margin: 20px;
+    justify-content: left;
+  }
+  .table_button{
+    background: #FCBC67;
+    border: 2px solid #FCBC67;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 9px 16px;
+    width: 121px;
+    height: 40px;
+    left: 701px;
+    top: 4626px;
+    /* box-sizing: border-box; */
+    border-radius: 2px;
+  }
