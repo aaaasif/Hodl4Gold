@@ -61,16 +61,16 @@ table {
     border-radius: 50%;
   }
   .fm{
-    background-color: #F99A2C !important;
+    background: #F99A2C !important;
   }
   .bc{
-    background-color: #2CF996 !important;
+    background: #2CF996 !important;
   }
   .sn{
-    background-color: #2CE0F9 !important;
+    background: #2CE0F9 !important;
   }
   .rr{
-    background-color: #F9752C !important;
+    background: #F9752C !important;
   }
   .dl{
     background: #F9752C !important;
