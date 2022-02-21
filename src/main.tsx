@@ -6,6 +6,9 @@ import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
 import { BrowserRouter } from "react-router-dom";
 import Provider from "./store/Provider";
 
+// eslint-disable-next-line
+import "swiper/css/bundle";
+
 const supportedChainIds = [4];
 
 const connectors = {
