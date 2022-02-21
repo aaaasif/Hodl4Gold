@@ -40,7 +40,7 @@ table {
   .table_row{
     border: 1px solid #FCBC67;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 10%;
     background-color: #FFFFFF;
   }
   td{
@@ -58,7 +58,7 @@ table {
     margin-right: 15px;
     padding: 10px;
     background-color: rgb(101, 211, 255);
-    border-radius: 50%;
+    border-radius: 40%;
   }
   .fm{
     background: #F99A2C !important;
